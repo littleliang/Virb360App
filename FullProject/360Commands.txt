@@ -1,0 +1,15 @@
+Live preview:
+curl.exe --data "{\"command\":\"livePreview\",\"streamType\":\"rtp\",\"maxResolutionVertical\":\"720\",\"liveStreamActive\":\"1\"}" http://192.168.0.1/virb
+
+Gallery
+curl --data "{\"command\":\"mediaList\"}" http://192.168.0.1/virb
+
+Start recording
+curl --data "{\"command\":\"startRecording\"}" http://192.168.0.1/virb
+
+Stop recording
+curl --data "{\"command\":\"stopRecording\"}" http://192.168.0.1/virb
+
+Status camera
+curl --data "{\"command\":\"status\"}" http://192.168.0.1/virb
+

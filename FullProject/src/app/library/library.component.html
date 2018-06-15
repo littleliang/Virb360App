@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="placeholder">
+        <button (click)="left()" class="left"><</button>
+        <img *ngIf="currentPicture.url" src="{{currentPicture.url}}" class="liveView">
+        <button (click)="right()" class="right">></button>
+    </div>
+    <button class="button" (click)="gallery()">
+        Show Pictures
+        <div class="button__horizontal"></div>
+        <div class="button__vertical"></div>
+    </button>
+</div>

@@ -1,0 +1,47 @@
+
+            <form #signupForm="ngForm" (ngSubmit)="save(signupForm)">
+                    <div class="container">
+            <div class="col">
+                <p>Lens mode</p><br>
+                <input type="radio" name="lensMode" value="360" (ngModel)="lensMode"> <label>360</label><br>
+                <input type="radio" name="lensMode" value="front" (ngModel)="lensMode"><label>Front</label><br>
+                <input type="radio" name="lensMode" value="back" (ngModel)="lensMode"><label>Back</label><br>
+                <input type="radio" name="lensMode" value="RAW" (ngModel)="lensMode"><label>RAW</label>
+                <br><br><p>Stitch Distance</p><br>
+                <input type="radio" name="stitchDistance" value="far" (ngModel)="stitchDistance"><label>Far</label><br>
+                <input type="radio" name="stitchDistance" value="near" (ngModel)="stitchDistance"><label>Near</label>
+                <br><br><p>Video Settings</p><br>
+                <input type="radio" name="videoMode" value="Tall" (ngModel)="videoMode"><label>Tall</label><br>
+                <input type="radio" name="videoMode" value="HD Video" (ngModel)="videoMode"><label>HD Video</label><br>
+                <input type="radio" name="videoMode" value="Slow-Mo" (ngModel)="videoMode"><label>Slow-mo</label><br>
+                <input type="radio" name="videoMode" value="Expansive" (ngModel)="videoMode"><label>Expansive</label><br>
+                <input type="radio" name="videoMode" value="Video" (ngModel)="videoMode"><label>Video</label><br>
+                <input type="radio" name="videoMode" value="TimeLapse" (ngModel)="videoMode"><label>Time-lapse</label>
+            </div>
+            <div class="col">
+                <p>Picture</p><br>
+                <input type="radio" name="photoMode" value="Single" (ngModel)="photoMode"><label>Picture</label><br>
+                <input type="radio" name="photoMode" value="Burst" (ngModel)="photoMode"><label>Burst</label><br>
+                <input type="radio" name="photoMode" value="Timelapse" (ngModel)="photoMode"><label>Timelapse</label><br>
+                <input type="radio" name="photoMode" value="Ext. Timelapse" (ngModel)="photoMode"><label>Ext. Timelapse</label>
+                <br><br><p>Picture Timer</p><br>
+                <input type="radio" name="selfTimer" value="Off" (ngModel)="selfTimer"><label>off</label><br>
+                <input type="radio" name="selfTimer" value="2" (ngModel)="selfTimer"><label>2s</label><br>
+                <input type="radio" name="selfTimer" value="3" (ngModel)="selfTimer"><label>3s</label><br>
+                <input type="radio" name="selfTimer" value="4" (ngModel)="selfTimer"><label>4s</label><br>
+                <input type="radio" name="selfTimer" value="5" (ngModel)="selfTimer"><label>5s</label><br>
+                <input type="radio" name="selfTimer" value="10" (ngModel)="selfTimer"><label>10s</label><br>
+                <input type="radio" name="selfTimer" value="30" (ngModel)="selfTimer"><label>30s</label><br>
+                <input type="radio" name="selfTimer" value="60" (ngModel)="selfTimer"><label>60s</label>
+                <br><br><p>GPS</p><br>
+                <input type="radio" name="gps" value="on" (ngModel)="gps"><label>ON</label><br>
+                <input type="radio" name="gps" value="off" (ngModel)="gps"><label>OFF</label>
+            </div>
+            </div>
+            <button class="button" type="submit">
+                    Save settings
+                    <div class="button__horizontal"></div>
+                    <div class="button__vertical"></div>
+                </button>
+            </form>
+

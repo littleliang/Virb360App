@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="liveView"> The stream has ended.
+        <video *ngIf="livePreview" src="{{livePreview}}" class="liveView"></video>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="button" (click)="StartRec()">
+                    Start Recording
+                    <div class="button__horizontal"></div>
+                    <div class="button__vertical"></div>
+            </button>
+            <button class="button" (click)="StopRec()">
+                    Stop Recording
+                    <div class="button__horizontal"></div>
+                    <div class="button__vertical"></div>
+            </button>
+        </div>
+        <div class="col">
+                <button class="button" (click)="picture()">
+                        Take a picture
+                        <div class="button__horizontal"></div>
+                        <div class="button__vertical"></div>
+                </button>
+                <button class="button" [routerLink]="['/settings']">
+                        Go to settings
+                        <div class="button__horizontal"></div>
+                        <div class="button__vertical"></div>
+                </button>
+        </div>
+        <div class="col">
+                <button class="button" (click)="StartLiveView()">
+                        Start live view
+                        <div class="button__horizontal"></div>
+                        <div class="button__vertical"></div>
+                </button>
+                <button class="button" (click)="StopLiveView()">
+                        Stop live view
+                        <div class="button__horizontal"></div>
+                        <div class="button__vertical"></div>
+                </button>
+        </div>
+    </div>
+
+</div>
+
+
+
